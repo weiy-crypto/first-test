@@ -5,6 +5,7 @@ import com.example.frist_test.pojo.Book;
 import com.example.frist_test.pojo.Cat;
 import com.example.frist_test.pojo.Dog;
 import com.example.frist_test.pojo.People;
+import com.example.frist_test.pojo.Phone;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -67,5 +68,11 @@ class FristTestApplicationTests {
     void  testFn5() {
 	    Book book = new Book("0001","shz",50,30.00,"gdsz");
 	    System.out.println(book);
+    }
+
+    @Test
+    void testFn6() {
+        Phone phone = new Phone("123456","huawei");
+        System.out.println(phone);
     }
 }
