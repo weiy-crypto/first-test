@@ -1,6 +1,7 @@
 package com.example.frist_test;
 
 import com.example.frist_test.pojo.Car;
+import com.example.frist_test.pojo.Book;
 import com.example.frist_test.pojo.Cat;
 import com.example.frist_test.pojo.Dog;
 import com.example.frist_test.pojo.People;
@@ -60,5 +61,11 @@ class FristTestApplicationTests {
     void testFn4() {
         Car car = new Car("bc","white",100,59999.0);
         System.out.println(car);
+    }
+
+    @Test
+    void  testFn5() {
+	    Book book = new Book("0001","shz",50,30.00,"gdsz");
+	    System.out.println(book);
     }
 }
