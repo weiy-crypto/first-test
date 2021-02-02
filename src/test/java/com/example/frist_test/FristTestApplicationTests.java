@@ -1,5 +1,6 @@
 package com.example.frist_test;
 
+import com.example.frist_test.pojo.Car;
 import com.example.frist_test.pojo.Cat;
 import com.example.frist_test.pojo.Dog;
 import com.example.frist_test.pojo.People;
@@ -53,5 +54,11 @@ class FristTestApplicationTests {
         cat.setColor("pink");
         cat.setType("w");
         System.out.println(people);
+    }
+
+    @Test
+    void testFn4() {
+        Car car = new Car("bc","white",100,59999.0);
+        System.out.println(car);
     }
 }
