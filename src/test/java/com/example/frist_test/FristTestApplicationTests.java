@@ -2,6 +2,7 @@ package com.example.frist_test;
 
 import com.example.frist_test.pojo.Cat;
 import com.example.frist_test.pojo.Dog;
+import com.example.frist_test.pojo.People;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -28,6 +29,12 @@ class FristTestApplicationTests {
 		cat.setAge(15);
 		cat.setColor("pink");
 		cat.setType("w");
+		System.out.println(cat);
 	}
 
+	@Test
+    void testFn2() {
+        People people = new People();
+        System.out.println(people);
+    }
 }

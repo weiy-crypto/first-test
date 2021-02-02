@@ -1,10 +1,11 @@
 package com.example.frist_test.pojo;
 
-public class Dog {
+public class People {
 
     private String name;
     private int age;
-    private String color;
+    private Dog dog;
+    private Cat cat;
 
     public String getName() {
         return name;
@@ -22,20 +23,29 @@ public class Dog {
         this.age = age;
     }
 
-    public String getColor() {
-        return color;
+    public Dog getDog() {
+        return dog;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setDog(Dog dog) {
+        this.dog = dog;
+    }
+
+    public Cat getCat() {
+        return cat;
+    }
+
+    public void setCat(Cat cat) {
+        this.cat = cat;
     }
 
     @Override
     public String toString() {
-        return "Dog{" +
+        return "People{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", color='" + color + '\'' +
+                ", dog=" + dog +
+                ", cat=" + cat +
                 '}';
     }
 
